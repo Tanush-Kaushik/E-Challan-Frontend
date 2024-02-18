@@ -1,0 +1,72 @@
+.vehicleInputArea {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    input {
+        font-size: 56px;
+        margin: 2rem 0;
+        color: #0B409C;
+    }
+
+    button {
+        background-color: #0B409C;
+        font-size: 28px;
+        color: #f8f8f8;
+        cursor: pointer;
+        font-weight: 800;
+        
+    }
+}
+
+.vehicleInputSection {
+    background-color: #e4e4e4;
+}
+
+.FAQTitle {
+    width: 40%;
+    button{
+        background-color: #0B409C;
+        font-size: 28px;
+        color: #f8f8f8;
+        cursor: pointer;
+        font-weight: 800;
+    }
+}
+
+.FAQSection {
+    /* display: flex; */
+    flex-direction: row;
+    gap: 5%;
+    height: fit-content;
+}
+
+.FAQs {
+    width: 50%;
+    color: #f8f8f8;
+}
+ 
+.FAQQuestion {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+    h1 {
+        transition: transform 0.3s ease;
+    }
+
+}
+
+.FAQQuestion.open h1 {
+    transform: rotateZ(90deg);
+}
+
+.FAQAnswer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease;
+}
+
+.FAQAnswer.open {
+    max-height: 110px;
+}

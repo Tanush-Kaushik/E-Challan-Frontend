@@ -1,0 +1,33 @@
+.links{
+    display: flex;
+    flex-direction: row;   
+    gap: 2rem;
+    height: 8vh;
+    line-height: 8vh;
+    h3{
+        margin: 0;
+    }
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;   
+    gap: 2rem;
+    height: 8vh;
+    line-height: 8vh;   
+    text-decoration: none;
+    margin-top: 0.3rem;
+    color: black;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    padding:0 10vh; 
+    background-color: #f8f8f8;
+    color: #0F1035;
+}
+hr{
+    margin: 0;
+}

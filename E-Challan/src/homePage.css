@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+.container{
+    margin: 0;
+    padding: 10vh;
+    height: 80vh;
+    background-color: #f8f8f8;
+    h2{
+        font-size: 56px;
+        color: #000249;
+    }
+    h3{
+        color: #0b0f6e;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 400;
+        color: #2F89FC;
+    }
+    display: flex;
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 15rem;
+}
+.heroText,.CTA{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-items: flex-start;
+}
+.heroTextPanel, .CTAPanel{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding-top: 20px; */
+}
+.heroTextButtons,.featureTextButtons,.featureContinueTextButtons,.CTAButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    
+}
+.heroTextButtons :nth-child(1),.CTAButtons :nth-child(1){
+    background-color: #0B409C;
+    color: white;
+}
+.heroTextButtons :nth-child(2), .CTAButtons :nth-child(2){
+    background-color: #f8f8f8;
+}
+@keyframes pulsate{
+    0%,100%{
+        background-color: #d2d3cc;
+    }
+    50%{
+        background-color:#f8f8f8;
+    }
+}
+.empty{
+    flex: 1;
+    width:100%;
+    background-color:#f8f8f8;
+    animation: pulsate 2s infinite ease-in-out;
+
+}
+
+/* featured Section */
+
+.featureSection, .featureSectionContinued{
+    flex-direction: row;
+}
+.featureText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-right: 10%;
+}
+.featureContinueText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.featureTextButtons :nth-child(1),.benefitsButtons :nth-child(1),.featureContinueTextButtons :nth-child(1){
+    background-color: #0B409C;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+.featureTextButtons :nth-child(2),.benefitsButtons :nth-child(2), .featureContinueTextButtons :nth-child(2){
+    background-color: #f8f8f8;
+    border-color: white;
+    cursor: pointer;
+    border: 0;
+}
+.workingButtons :nth-child(1){
+    background-color: #f8f8f8;
+    cursor: pointer;
+    /* color: #f69f58; */
+}
+.workingButtons :nth-child(2){
+    background-color: #000249;
+    cursor: pointer;
+    color: #d1c9bd;
+    border: 0;
+}
+/* benefits Section */
+.benefitsSection{
+    flex-direction: row;
+}
+.benefits,.feature{
+    width: 40%;
+    padding-right: 10%;
+}
+.benefitList{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding:  5% 0;
+}
+
+/* working Section*/
+
+.workingSection{
+    text-align: center;
+    background-color: #0B409C;
+    height: 70vh;
+    h2{
+        color: #f8f8f8;
+    }
+    h4{
+        color:#d1c9bd;
+    }
+}
+.workingCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:7%;
+    padding: 5%;
+}
+.workingButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;    
+}
+
+.benefitsButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;        
+}
+.TestimonialSection{
+    flex-direction: row;
+}
+/* testimonial Section */
+.testimonial{
+    width: 50%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* CTA Section */
+.CTASection{
+    height: auto;
+}
+.CTAPanel{
+    width: 50%;
+}
+
+.upperTriangle{
+    height: 10rem;
+    background-image: linear-gradient(to bottom left, #f8f8f8 50%, #0B409C 50%,#0B409C );
+}
+.lowerTriangle{
+    height: 10rem;
+    background-image: linear-gradient(to top right, #f8f8f8 0%, #f8f8f8 50%, #0B409C 50%, #0B409C 100%);
+
+}
